@@ -30,6 +30,6 @@ class AbsenController extends Controller
         $absen->status_kehadiran = $request->status_kehadiran;
         $absen->save();
 
-        return redirect()->route('absen.index')->with('success', 'Absen berhasil disimpan.');
+        return redirect()->route('succes')->with('success', 'Absen berhasil disimpan.');
     }
 }

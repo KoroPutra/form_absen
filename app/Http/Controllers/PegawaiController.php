@@ -10,7 +10,7 @@ class PegawaiController extends Controller
     public function getNip()
     {
         // Ambil data NIP dari database
-        $nips = Pegawai::pluck('nip');
+        $nips = Pegawai::pluck('nip', 'nama');
         return view('absen', compact('nips'));
     }
 }
