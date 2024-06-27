@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AbsenController;
+use App\Http\Controllers\ConfigController;
 use App\Http\Controllers\PegawaiController;
 
 Route::get('/', function () {

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Absen;
+use App\Models\Config;
+use Carbon\Carbon;
 
 class AbsenController extends Controller
 {
