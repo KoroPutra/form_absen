@@ -10,6 +10,7 @@ class PegawaiController extends Controller
 {
     public function getNip()
     {
+        // Tabel config
         $isJamEnabled = Config::where('label', 'isJamManual')->value('value');
 
         // Ambil data NIP dari database

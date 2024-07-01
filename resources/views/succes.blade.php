@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Absen</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.0/sweetalert2.all.min.js" integrity="sha512-3VXeZhhm1/owfuUI+kWBQBjUOZXOEc97aUMwHS9zxA71HxhVaKMxYXX5BzE5mHiN5wxhWTTZWLoSO5MmcrcunQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
@@ -27,5 +28,22 @@
 
   </div>
 </div>
+<script>
+ const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.onmouseenter = Swal.stopTimer;
+    toast.onmouseleave = Swal.resumeTimer;
+  }
+});
+Toast.fire({
+  icon: "success",
+  title: "Absen telah tersimpan !!"
+});
+</script>
 </body>
 </html>
